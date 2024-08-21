@@ -1,0 +1,119 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(2,37,78,1) 0%, rgba(4,56,126,1) 19.7%, rgba(85,245,221,1) 100.2% );
+  --toastify-color-light: rgba(4,56,126,1);
+  --toastify-text-color-light: #ffffff;
+}
+
+p {
+  color: #fff;
+}
+
+.heading {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.mint-section {
+  flex: 1;
+  padding: 100px;
+  text-align: center;
+}
+
+.wallet-section {
+  flex: 1;
+  padding: 100px;
+  text-align: center;
+}
+
+.mint-section {
+  border-right: 1px solid #ddd;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  background-color: #00ddf1;
+  outline: none;
+  border-color: #000;
+  color: #000;
+}
+
+.btnMint {
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 100px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btnMint:hover {
+  background-color: #00ddf1;
+  color: #000;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.btn:hover {
+  background-color: #00ddf1;
+  color: #000;
+}
+
+a:hover {
+  color: #00ddf1 !important;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .mint-section {
+    padding: 60px;
+  }
+
+  .wallet-section {
+    padding: 60px;
+  }
+}
