@@ -98,9 +98,11 @@ function App() {
       });
 
       const result = await tx.wait();
-      console.log("🚀 ~ mintToken ~ result:", result);
-      toast.success("Minted successfully!");
-
+      if(result && result.status === 1) {
+        console.log("🚀 ~ mintToken ~ result:", result);
+        toast.success("Minted successfully!");
+        setMinting(false)
+      }
     } catch (error) {
       setMinting(false)
       console.error("Minting error:", error);
