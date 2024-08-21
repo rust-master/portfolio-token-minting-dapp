@@ -132,7 +132,7 @@ function App() {
             }}
             placeholder="Amount to mint"
           />
-          <button className='btnMint' onClick={mintToken}>
+          <button className='btnMint' onClick={mintToken}  disabled={minting}>
             {minting ? (
               <CircularProgress size={15} sx={{ color: '#fff', }} />
             ) : (
